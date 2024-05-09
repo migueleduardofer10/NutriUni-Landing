@@ -109,7 +109,7 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #000; /* Mejora la visibilidad */
+    background-color: #f7e194; /* Mejora la visibilidad */
     border-radius: 50%; /* Hace los botones redondos */
 
 }
@@ -140,10 +140,64 @@
 .bg-image {
     background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
-    min-height: 500px; /* Establece una altura mínima para el contenedor */
+    min-height: 650px; /* Establece una altura mínima para el contenedor */
     color: rgb(41, 41, 41); /* Cambia el color del texto a blanco para mejorar la legibilidad */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Alinea verticalmente el contenido en el centro */
     padding-left: 20px; /* Agrega un poco de relleno a la izquierda para no pegar el texto al borde */
 }
+
+.button-container {
+    padding-top: 80px;
+    padding-left: 80px;
+}
+
+.btn-primary {
+    background-color: #41d46d;
+    border-color: #0EB95B;
+    padding: 12px 20px; /* Ajusta el tamaño del botón */
+}
+
+.card-group {
+    display: flex;
+    justify-content: space-between; /* Asegura que haya espacio entre las tarjetas */
+    gap: 20px; /* Ajusta este valor según el espaciado deseado */
+}
+
+.card {
+    flex: 1; /* Hace que todas las tarjetas tengan la misma anchura y ocupen espacio de manera equitativa */
+    margin-bottom: 20px; /* Espacio adicional por si se expanden al pasar el cursor */
+    transition: transform 0.3s ease; /* Suaviza la transformación */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la tarjeta al pasar el cursor */
+    z-index: 10; /* Asegura que la tarjeta en hover esté sobre las otras */
+}
+
+.list-inline .list-link {
+    color: rgb(3, 3, 3); /* Cambia el color del texto de los enlaces */
+    font-family: 'Poppings' sans-serif;
+    font-size: 18px;
+    margin-right: 20px; 
+    transition: background-color 0.3s, border-radius 0.8s; 
+    text-decoration: none;
+  }
+
+  .list-inline .list-link:hover {
+    color: #41d46d; /* Cambia el color del texto de los enlaces */
+  }
+
+.list-inline{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+  footer {
+    bottom: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #fff9e1;
+    padding: 10px 0;
+  }
+

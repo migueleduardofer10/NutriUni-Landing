@@ -50,6 +50,42 @@
 }
 
 .small-image {
-    max-width: 100px; /* Tamaño máximo deseado para la imagen */
-    height: 200px; /* Altura automática para mantener la proporción */
+    max-width: 100px; 
+    height: 200px; 
   }
+
+#accordionExample .accordion-button {
+    background-color: #41d46d; 
+    color: white; 
+    border: none; 
+}
+
+#accordionExample .accordion-button:focus {
+    box-shadow: none;
+}
+
+#accordionExample .accordion-button:not(.collapsed) {
+    background-color: #35b957;
+    color: white;
+}
+
+#accordionExample .accordion-button:not(.collapsed)::after {
+    content: ""; 
+}
+
+#accordionExample .accordion-body {
+    background-color: #effff0; 
+}
+
+#accordionExample .accordion-button {
+    transition: background-color 0.3s ease;
+}
+
+#accordionExample .accordion-item {
+    border: none; 
+    border-bottom: 2px solid #ddd; 
+}
+
+#accordionExample .accordion-item:last-child {
+    border-bottom: none; 
+}

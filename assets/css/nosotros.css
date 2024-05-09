@@ -10,7 +10,7 @@
 }
 
 #hero-slider img {
-    width: 80%; 
+    width: 70%; 
     height: auto; 
     max-height: 500px; 
     object-fit: cover; 
@@ -41,7 +41,7 @@
 }
 
 #nuestro-equipo .card-img-top {
-    width: 100%; 
+    width: 90%; 
     height: 300px; 
     object-fit: contain; 
     display: block;
@@ -98,7 +98,7 @@
 }
 
 #trabaja-con-nosotros img {
-    width: 100%; 
+    width: 90%; 
     height: auto; 
     max-height: 300px; 
     object-fit: cover; 

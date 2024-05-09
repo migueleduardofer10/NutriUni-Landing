@@ -23,7 +23,7 @@
 }
 
 #custom-accordion .card-header {
-    background-color: #2AC787;
+    background-color: #41d46d;
     border-radius: 5px; 
     padding: 10px 15px; 
     margin-bottom: 5px; 
@@ -44,7 +44,7 @@
 
 #custom-accordion h6 {
     font-size: 1rem; 
-    color: #495057; 
+    color: #ffffff; 
 }
 
 #custom-accordion .fa-chevron-down {

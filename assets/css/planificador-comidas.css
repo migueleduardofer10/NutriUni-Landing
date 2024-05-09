@@ -13,6 +13,49 @@
     width: 5%; 
 }
 
+#carouselExampleControls .card-body {
+    background-color: #fff; /* Fondo blanco para mayor legibilidad */
+    padding: 20px; /* Añade un padding para espaciar el contenido */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+    margin-bottom: 10px; /* Espacio debajo de cada tarjeta */
+}
+
+#carouselExampleControls .card-title {
+    color: #333; /* Color oscuro para el título para mejor contraste */
+    font-weight: bold; /* Hacer el título más destacado */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+#carouselExampleControls .card-text {
+    color: #666; 
+    line-height: 1.5; 
+    margin-bottom: 15px; 
+}
+
+#carouselExampleControls .btn-primary, #carouselExampleControls .btn-info {
+    width: 100%; 
+    margin-top: 5px; 
+}
+
+#carouselExampleControls .btn-primary {
+    background-color: transparent; /* Elimina el color de fondo */
+    color: #007bff; /* Mantiene el color azul por defecto para enlaces */
+    border: none; /* Elimina el borde */
+    padding: 0; /* Elimina el padding */
+    box-shadow: none; /* Elimina cualquier sombra */
+    text-decoration: underline; /* Añade subrayado para parecer un enlace */
+    display: inline; /* Asegura que el enlace no ocupe todo el ancho */
+    margin: 0; /* Elimina cualquier margen */
+    font-weight: normal; /* Estilo de fuente normal, no negrita */
+}
+
+
+#carouselExampleControls .btn-info {
+    color: #fff; 
+    background-color: #41d46d;
+    border-color: #41d46d; /
+}
 #recomendaciones-section h2 {
     color: #333; 
 }
