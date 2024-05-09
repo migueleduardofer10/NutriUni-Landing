@@ -81,16 +81,31 @@
     </header>
     <main>
       <div class="container mt-5">
-          <div class="row">
-              <div class="col">
-                  <h2 class="text-start my-2">¿Qué hay para comer?</h2>
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col">
+              <h2 class="text-start my-2">¿Qué hay para comer?</h2>
+            </div>
+            <div class="col-md-4">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Opciones
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Opción 1</a>
+                  <a class="dropdown-item" href="#">Opción 2</a>
+                  <a class="dropdown-item" href="#">Opción 3</a>
+                </div>
               </div>
+            </div>
           </div>
-  
+        </div>
          <!-- Sección de recomendaciones con ID -->
 <section  id="recomendaciones-section" class="row">
   <div class="col">
       <h3 class="my-5" >Recomendaciones</h3>
+    
+      
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
               <div class="carousel-item active">
@@ -170,8 +185,9 @@
 </section>
 <section id="meal-plan-section">
   <div class="col">
-    <h3 class="my-5" >Plan de comidas</h3>
-<table id="weekly-plan" class="table is-striped is-hoverable js-table-data">
+    <h3 class="my-5 d-inline-block mr-3">Plan de comidas</h3>
+    <a href="#" class="btn btn-primary mr-3"><i class="fas fa-download mr-2"></i> Descarga rápida</a>
+    <table id="weekly-plan" class="table is-striped is-hoverable js-table-data">
   <thead>
       <tr>
           <th>

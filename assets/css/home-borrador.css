@@ -136,3 +136,14 @@
     background-color: #41d46d;
     color: white;
 }
+
+.bg-image {
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    min-height: 500px; /* Establece una altura mínima para el contenedor */
+    color: rgb(41, 41, 41); /* Cambia el color del texto a blanco para mejorar la legibilidad */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinea verticalmente el contenido en el centro */
+    padding-left: 20px; /* Agrega un poco de relleno a la izquierda para no pegar el texto al borde */
+}

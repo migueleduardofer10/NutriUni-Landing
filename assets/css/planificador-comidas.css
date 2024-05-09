@@ -60,3 +60,21 @@
     color: #007bff; 
     text-decoration: none;
 }
+
+#meal-plan-section .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px; 
+}
+
+#meal-plan-section h3 {
+    margin-right: 20px; 
+}
+
+
+#meal-plan-section .btn:hover {
+    background-color: #24996b;
+}

@@ -1,8 +1,20 @@
 #section-accordion {
-    background-color: #f8f9fa; 
+    background-color: #fff; 
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+#section-accordion .section-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#section-accordion .section-description {
+    text-align: center;
+    color: #495057;
+    margin-bottom: 30px;
 }
 
 #custom-accordion .card {
