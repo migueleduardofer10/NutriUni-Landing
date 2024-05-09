@@ -1,0 +1,62 @@
+#recomendaciones-section .carousel-inner .carousel-item > .d-flex {
+    justify-content: center;
+    min-width: 100%; 
+}
+
+#recomendaciones-section .card {
+    flex: 0 0 auto;
+    width: 18rem; 
+}
+
+#recomendaciones-section .carousel-control-prev, 
+#recomendaciones-section .carousel-control-next {
+    width: 5%; 
+}
+
+#recomendaciones-section h2 {
+    color: #333; 
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#meal-plan-section .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#meal-plan-section th, #meal-plan-section td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#meal-plan-section th {
+    background-color: #f4f4f4;
+}
+
+#meal-plan-section .day-actions a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#meal-plan-section .has-text-success {
+    color: #28a745; 
+}
+
+#meal-plan-section .has-text-warning {
+    color: #ffc107; 
+}
+
+#meal-plan-section .has-text-danger {
+    color: #dc3545; 
+}
+
+#meal-plan-section .is-hidden {
+    display: none;
+}
+
+#meal-plan-section .recipe-link a {
+    color: #007bff; 
+    text-decoration: none;
+}

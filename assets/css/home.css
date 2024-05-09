@@ -1,5 +1,6 @@
+
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   font-size: 15px;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
@@ -9,7 +10,7 @@ body {
 main {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px; 
+    max-width: 1500PX; 
     padding-left: 15px; 
     padding-right: 15px; 
 }
@@ -127,3 +128,19 @@ footer a:hover {
 footer .list-inline-item {
     margin-right: 10px;
 }
+.navbar {
+    background-color: #538107; 
+  }
+  .navbar-brand {
+    font-size: 24px; /* Cambia el tamaño del texto del título */
+    font-family: 'Nunito', sans-serif; /* Cambia el tipo de letra del título */
+    font-weight: bold; /* Hace que el título tenga un peso de fuente más grueso */
+    color: #ffffff; /* Cambia el color del texto del título */
+    
+  }
+  .navbar-nav .nav-link {
+    color: #ac4b4b; /* Cambia el color del texto de los enlaces */
+  }
+
+
+  

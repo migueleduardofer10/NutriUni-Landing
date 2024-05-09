@@ -10,6 +10,7 @@
   <link href="assets/css/slick.css" rel="stylesheet" />
   <link href="assets/css/slick-theme.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/home-borrador.css" />
+  <link rel="stylesheet" href="assets/css/calculadoraIMC.css" />
 </head>
 
 <body>
@@ -64,91 +65,35 @@
     </nav>
   </header>
   <main>
-    <section class="container my-5" id="ultimas-publicaciones">
-      <h4 class="mb-4 text-left">Nuestras últimas publicaciones</h4>
-      <div class="row">
-        <div class="col-md-6 d-flex">
-          <div class="card flex-fill">
-            <img src="assets/images/publicaciones/pastas.webp" class="card-img-top" alt="Imagen destacada" />
-            <div class="card-body">
-              <h4 class="card-title">¿Son malas para la salud, engordan y no tienen nutrientes? Mitos y verdades de las
-                pastas</h4>
-              <p class="card-text">
-                Las pastas son uno de los insumos más usados en la gastronomía y se han dicho muchas cosas sobre su
-                impacto en una alimentación balanceada. En este artículo tratamos de diluir algunos mitos y verdades.
-                Toma nota.
-              </p>
-              <a href="publi-pastas.html" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
+    <section id="imc-calculator" class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center mb-4">
+          <h2 class="display-6">Calculadora IMC</h2>
         </div>
-        <div class="col-md-6 d-flex flex-column">
-          <div class="card mb-3 flex-fill">
-            <div class="card-body">
-              <h5 class="card-title">Atún: 4 razones para consumir este súper pescado</h5>
 
-              <a href="publi-atun.html" class="btn btn-primary">Ver más</a>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="altura" class="form-label">Estatura (metros)</label>
+              <input type="number" class="form-control" id="altura" placeholder="Ingresa tu estatura en metros">
             </div>
-          </div>
-          <div class="card mb-3 flex-fill">
-            <div class="card-body">
-              <h5 class="card-title">El alimento que ayuda a prevenir las piedras en el riñón</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
+            <div class="mb-3">
+              <label for="peso" class="form-label">Peso (kilogramos)</label>
+              <input type="number" class="form-control" id="peso" placeholder="Ingresa tu peso en kilogramos">
             </div>
-          </div>
-          <div class="card flex-fill">
-            <div class="card-body">
-              <h5 class="card-title">El yogur, la avena y los aguacates animan más que el chocolate</h5>
-              <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
+            <p>
+              El índice de masa corporal (IMC) es la relación entre la masa corporal de una persona y su estatura.
+              Según los valores propuestos por la Organización Mundial de la Salud (OMS), el IMC es uno de los
+              principales recursos para evaluar el estado nutricional.
+            </p>
+            <a href="calculadoraIMC_resultados.html" class="btn btn-primary">Calcular</a>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/nutricion/imc.webp" class="img-fluid" alt="Imagen descriptiva">
         </div>
       </div>
     </section>
-
-    <section class="container my-5" id="publicaciones-populares">
-      <h4 class="mb-4 text-left">Publicaciones Más Populares</h4>
-      <div class="row">
-        <div class="col-md-6 d-flex">
-          <div class="card flex-fill">
-            <img src="assets/images/publicaciones/desayunos_frutales.webp" class="card-img-top"
-              alt="Imagen destacada de la publicación popular" />
-            <div class="card-body">
-              <h5 class="card-title">¿Es realmente bueno comer fruta por la noche?</h5>
-              <p class="card-text">
-                Nuestro nutricionista Aitor Sánchez resuelve las dudas de los lectores. ¿Debemos eliminar la salsa de soja en nuestra alimentación? 
-              </p>
-              <a href="publi-fruta.html" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex flex-column">
-          <div class="card mb-3 flex-fill">
-            <div class="card-body">
-              <h5 class="card-title">El alimento que ayuda a prevenir las piedras en el riñón</h5>
-              
-              <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
-          <div class="card mb-3 flex-fill">
-            <div class="card-body">
-              <h5 class="card-title">¿Son malas para la salud, engordan y no tienen nutrientes? Mitos y verdades de las pastas</h5>
-              
-              <a href="publi-pastas.html" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
-          <div class="card flex-fill">
-            <div class="card-body">
-              <h5 class="card-title">Atún: 4 razones para consumir este súper pescado
-              </h5>
-              
-              <a href="publi-atun.html" class="btn btn-primary">Ver más</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
   <footer class="bg-light text-center text-lg-end">
     <div class="container p-3">
@@ -182,12 +127,16 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery-plugin-collection.js"></script>
   <script src="assets/js/nosotros.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

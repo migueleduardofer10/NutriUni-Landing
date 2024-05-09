@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriUni</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <link href="assets/css/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/home-borrador.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/home/logo.webp" alt=" " class="navbar-logo"/>
+            NutriUni</a>
+
+          <!-- Botón para dispositivos móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <!-- Enlaces de la barra de navegación -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home-borrador.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                
+                <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nutrición
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="ultimas-publicaciones.html">Artículos Educativos</a></li>
+                    <li><a class="dropdown-item" href="informacion-nutricional.html">Información Nutricional</a></li>
+                    <li><a class="dropdown-item" href="calculadoraIMC.html">Calculadora de IMC</a></li>
+                </ul>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="planificador-comidas.html">Planificador de comidas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="home-borrador.html"></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <main>
+        <!-- Banner Section -->
+        <div class="container-fluid bg-light p-5 text-center custom-padding">
+          <h1 class="mb-3">¡Come saludable, vive mejor!</h1>
+          <p class="lead mb-4">Descubre recetas saludables y planifica tus comidas con facilidad.</p>
+          <div class="d-flex justify-content-center"> <!-- Agregar esta envoltura para alinear el botón -->
+              <a href="#services" class="btn btn-primary btn-lg">Conocer más</a>
+          </div>
+        </div>
+
+      <!-- Testimonios -->
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Primer testimonio (activo por defecto) -->
+            <div class="carousel-item active">
+                <div class="text-center"> <!-- Centro la imagen -->
+                    <img src="https://cdn.discordapp.com/attachments/970873833835888651/1238011686154403891/singer-Taylor-swift-2013.png?ex=663dbbbb&is=663c6a3b&hm=fca5a2e4e6b37ad6445e7d82eb190feaba713cbbad6f3446abbaba760b82c0c5& class=" class="rounded-circle img-fluid" alt="Testimonio de Persona 1">
+                </div>
+                <div class="text-center mt-3"> <!-- Centro el texto debajo de la imagen -->
+                    <h5>Taylor S.</h5>
+                    <p class="title">Web Designer</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit..."</p>
+                </div>
+            </div>
+    
+            <!-- Segundo testimonio -->
+            <div class="carousel-item">
+                <div class="text-center">
+                    <img src="https://cdn.discordapp.com/attachments/970873833835888651/1238011686154403891/singer-Taylor-swift-2013.png?ex=663dbbbb&is=663c6a3b&hm=fca5a2e4e6b37ad6445e7d82eb190feaba713cbbad6f3446abbaba760b82c0c5&" class="rounded-circle img-fluid" alt="Testimonio de Persona 2">
+                </div>
+                <div class="text-center mt-3">
+                    <h5>PERSONA 2</h5>
+                    <p class="title">Software Engineer</p>
+                    <p>"Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a..."</p>
+                </div>
+            </div>
+    
+            <!-- Tercer testimonio -->
+            <div class="carousel-item">
+                <div class="text-center">
+                    <img src="https://cdn.discordapp.com/attachments/970873833835888651/1238011686154403891/singer-Taylor-swift-2013.png?ex=663dbbbb&is=663c6a3b&hm=fca5a2e4e6b37ad6445e7d82eb190feaba713cbbad6f3446abbaba760b82c0c5&" class="rounded-circle img-fluid" alt="Testimonio de Persona 3">
+                </div>
+                <div class="text-center mt-3">
+                    <h5>PERSONA 3</h5>
+                    <p class="title">Project Manager</p>
+                    <p>"Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem..."</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Flechas de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+
+      <div class="container my-5">
+        <!-- Planificador de comidas -->
+        <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+                <h5 class="card-title custom-title-size">Planificador de comidas</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://media.discordapp.net/attachments/970873833835888651/1238021790253711410/image.png?ex=663dc524&is=663c73a4&hm=337bea6faeecfcb2f04978b07481da0a2f5af22c7d07b0fab4bb8af008ac5151&=&format=webp&quality=lossless&width=640&height=640" class="img-fluid custom-img-size-1" alt="Planificador de comidas">
+            </div>
+        </div>
+    
+        <!-- Calculadora de IMC -->
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <h5 class="card-title custom-title-size">Calculadora de IMC</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="calculadoraIMC.html" class="btn btn-primary">Ver más</a>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <img src="https://cdn.discordapp.com/attachments/970873833835888651/1238018439801602071/image.png?ex=663dc205&is=663c7085&hm=755d867b5ba098ea0d269627d175c60a90d183705fc7215610c29059ba1c41ff&" class="img-fluid custom-img-size" alt="Calculadora de IMC">
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- News Articles Section -->
+        <section class="container mt-5">
+            <h2 class="text-center mb-4">Últimas Noticias</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/publicaciones/desayunos_frutales.webp" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Es realmente bueno comer fruta por la noche?</h5>
+                            <a href="publi-fruta.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/publicaciones/atun.webp" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Atún: 4 razones para consumir este súper pescado</h5>
+                            <a href="publi-atun.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images/publicaciones/pastas.webp" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Son malas para la salud, engordan y no tienen nutrientes? Mitos y verdades de las pastas</h5>
+                            <a href="publi-pastas.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light text-center text-lg-end">
+      <div class="container p-3">
+        <div class="row align-items-center">
+          <div class="col">
+            <p class="mb-0 float-lg-start">NutriUni</p>
+          </div>
+          <div class="col">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="home-borrador.html" class="link-dark">Inicio</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="sobre-nosotros.html" class="link-dark">Sobre Nosotros</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="link-dark">Nutrición</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="link-dark">Planificador de comidas</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="faq.html" class="link-dark">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <p class="mb-0 float-lg-end">© 2024 NutriUni</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

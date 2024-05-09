@@ -1,0 +1,138 @@
+
+.carousel-item img {
+    height: 35vh; /* Adjust the height of the images in the carousel */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 20px;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly increase the size of the card on hover for a subtle effect */
+}
+
+.card-img-top {
+    height: 200px; /* Uniform height for all news images */
+    object-fit: cover;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-title {
+    font-size: 1.2rem; /* Aumenta el tamaño del título para más visibilidad */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #0EB95B; /* Azul de Bootstrap para botones */
+    border: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.navbar-logo {
+    width: 40px; /* Ajusta el ancho del logo según sea necesario */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    margin-right: 10px; /* Espacio entre el logo y el texto del título */
+  }
+  .navbar {
+    background-color: #fff9e1; 
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+  .navbar-brand {
+    font-size: 26px; /* Cambia el tamaño del texto del título */
+    font-family: 'Poppings', sans-serif; /* Cambia el tipo de letra del título */
+    font-weight: bold; /* Hace que el título tenga un peso de fuente más grueso */
+    color: #41d46d; /* Cambia el color del texto del título */
+    
+  }
+  .navbar-nav .nav-link {
+    color: rgb(3, 3, 3); /* Cambia el color del texto de los enlaces */
+    font-family: 'Poppings' sans-serif;
+    font-size: 16px;
+    margin-right: 20px; 
+    transition: background-color 0.3s, border-radius 0.8s; 
+  }
+
+  /* Asegúrate de que la clase apunte correctamente a tu banner */
+.container-fluid.bg-light.p-5.text-center.custom-padding {
+    min-height: 500px; /* Ajusta este valor según tus necesidades */
+    padding: 50px 0; /* Aumenta el padding para dar más espacio vertical */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #41d46d; 
+    color: #ffffff;
+    transition: border-radius 0.5s ease-in;
+}
+
+/*testimonio estilos*/
+#testimonialCarousel .rounded-circle {
+    width: 120px;  /* Tamaño adecuado para la imagen */
+    height: 120px;
+    border-radius: 50%; /* Redondea completamente las esquinas */
+    object-fit: cover;
+    margin: auto; /* Alineación central automática */
+    margin-top: 20px;
+}
+
+#testimonialCarousel .carousel-item {
+    text-align: center; /* Centra todo el texto */
+}
+
+#testimonialCarousel .title {
+    color: #666; /* Color suave para el título del trabajo */
+    font-size: 16px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Mejora la visibilidad */
+    border-radius: 50%; /* Hace los botones redondos */
+
+}
+
+.custom-title-size {
+    font-size: 32px; /* Tamaño de fuente deseado */
+    
+}
+.custom-img-size {
+    width: 70%; /* Tamaño deseado del ancho */
+    height: auto;
+}
+.custom-img-size-1{
+    width: 70%; /* Tamaño deseado del ancho */
+    margin-left: 20%;
+}
+.navbar-toggler-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+.navbar .dropdown-menu {
+    background-color: #fff9e1; /* Cambia el color de fondo del menú desplegable solo dentro de la barra de navegación */
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #41d46d;
+    color: white;
+}
