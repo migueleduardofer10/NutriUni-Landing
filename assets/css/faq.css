@@ -1,0 +1,23 @@
+#section-accordion .card {
+    border: 1px solid #ccc;  /* Borde gris claro para cada tarjeta */
+    margin-bottom: 10px;     /* Espacio entre tarjetas */
+}
+
+#section-accordion .card-header {
+    background-color: #f7f7f7;  /* Fondo gris claro para los encabezados */
+    cursor: pointer;            /* Cursor en forma de mano para indicar interactividad */
+}
+
+#section-accordion .card-body {
+    background-color: white;   /* Fondo blanco para el cuerpo de las tarjetas */
+    color: #333;               /* Texto oscuro para mejorar la legibilidad */
+}
+
+#section-accordion .card-header a {
+    text-decoration: none;     /* Elimina el subrayado de los enlaces */
+    color: #0056b3;            /* Color azul para los textos de los enlaces */
+}
+
+#section-accordion .card-header a:hover {
+    color: #004494;            /* Color azul más oscuro al pasar el mouse */
+}

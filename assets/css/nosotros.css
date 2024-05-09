@@ -10,12 +10,25 @@
 }
 
 #hero-slider img {
-    width: 100%; 
+    width: 80%; 
     height: auto; 
     max-height: 500px; 
     object-fit: cover; 
 }
 
+#hero-slider .slick-prev,
+#hero-slider .slick-next {
+    color: #333;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+#hero-slider .slick-prev:hover,
+#hero-slider .slick-next:hover {
+    color: #555;
+}
 
 
 #nuestro-equipo .card {
@@ -29,12 +42,14 @@
 
 #nuestro-equipo .card-img-top {
     width: 100%; 
-    height: 200px; 
-    object-fit: cover; 
+    height: 300px; 
+    object-fit: contain; 
+    display: block;
+    margin: 0 auto; 
 }
 
 #nuestro-equipo .card-title {
-    color: #0056b3; 
+    color: #333; 
 }
 
 #nuestro-equipo .card-text {
@@ -61,4 +76,38 @@
     margin: 0 auto;
     max-width: 800px; 
     line-height: 1.6;
+}
+
+#trabaja-con-nosotros {
+    background-color: #fff;
+    padding: 40px 15px; 
+}
+
+#trabaja-con-nosotros h3 {
+    color: #333; 
+    margin-bottom: 15px; 
+    font-size: 1.5rem; 
+}
+
+#trabaja-con-nosotros p {
+    color: #666; 
+    font-size: 1rem;
+    line-height: 1.6; 
+    text-align: justify; 
+    margin-bottom: 20px;
+}
+
+#trabaja-con-nosotros img {
+    width: 100%; 
+    height: auto; 
+    max-height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
+}
+
+@media (max-width: 768px) {
+    #trabaja-con-nosotros .col-md-6 {
+        margin-bottom: 20px; 
+    }
 }
