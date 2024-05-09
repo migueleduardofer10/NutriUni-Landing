@@ -48,3 +48,8 @@
     color: #666;
     font-size: 16px; 
 }
+
+.small-image {
+    max-width: 100px; /* Tamaño máximo deseado para la imagen */
+    height: 200px; /* Altura automática para mantener la proporción */
+  }
