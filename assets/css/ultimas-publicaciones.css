@@ -1,0 +1,31 @@
+#ultimas-publicaciones .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#ultimas-publicaciones .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ultimas-publicaciones .btn-primary {
+    align-self: start; 
+}
+
+#publicaciones-populares .card {
+    display: flex;
+    flex-direction: column;
+}
+
+#publicaciones-populares .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#publicaciones-populares .btn-primary {
+    align-self: start; 
+}

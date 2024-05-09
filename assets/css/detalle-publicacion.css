@@ -1,0 +1,19 @@
+#detalles-articulo .mx-auto {
+    max-width: 800px; /* Establece el ancho máximo para el contenedor */
+    margin-left: auto; /* Centra el contenedor horizontalmente */
+    margin-right: auto; /* Centra el contenedor horizontalmente */
+}
+
+#detalles-articulo h2, #detalles-articulo p, #detalles-articulo img {
+    width: 100%; /* Hace que h2, p, img ocupen el 100% del contenedor .mx-auto */
+}
+
+#detalles-articulo img {
+    display: block; /* Asegura que la imagen no tenga espacio adicional alrededor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+#detalles-articulo p {
+    margin-bottom: 20px; /* Espacio debajo de cada párrafo */
+}
