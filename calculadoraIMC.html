@@ -128,42 +128,50 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script>
-    $(document).ready(function () {
-      $('#imcForm').on('submit', function (e) {
-        e.preventDefault();
-        var alturaCm = parseFloat($('#altura').val());
-        var peso = parseFloat($('#peso').val());
+   $(document).ready(function () {
+  $('#imcForm').on('submit', function (e) {
+    e.preventDefault();
+    var alturaCm = parseFloat($('#altura').val());
+    var peso = parseFloat($('#peso').val());
 
-        if (alturaCm > 0 && peso > 0) {
-          var alturaM = alturaCm / 100; // Convertir centímetros a metros
-          var imc = (peso / (alturaM * alturaM)).toFixed(1);
+    if (alturaCm > 0 && peso > 0) {
+      var alturaM = alturaCm / 100; // Convertir centímetros a metros
+      var imc = (peso / (alturaM * alturaM)).toFixed(1);
 
-          var interpretacion = '';
-          if (imc < 18.5) {
-            interpretacion = 'Peso inferior al normal';
-          } else if (imc >= 18.5 && imc < 24.9) {
-            interpretacion = 'Peso normal';
-          } else if (imc >= 25 && imc < 29.9) {
-            interpretacion = 'Peso superior al normal';
-          } else {
-            interpretacion = 'Obesidad';
-          }
+      var interpretacion = '';
+      var mensajeAdicional = '';
+      
+      if (imc < 18.5) {
+        interpretacion = 'Peso inferior al normal';
+        mensajeAdicional = 'Estar por debajo del peso normal puede indicar malnutrición, un trastorno alimentario o algún problema de salud subyacente. Es recomendable consultar a un profesional de la salud para una evaluación completa y determinar la causa subyacente.';
+      } else if (imc >= 18.5 && imc < 24.9) {
+        interpretacion = 'Peso normal';
+        mensajeAdicional = 'Mantener un peso normal es un buen indicador de salud general. Se recomienda seguir una dieta equilibrada y mantener un nivel adecuado de actividad física para conservar un peso saludable.';
+      } else if (imc >= 25 && imc < 29.9) {
+        interpretacion = 'Peso superior al normal';
+        mensajeAdicional = 'Tener un peso superior al normal puede aumentar el riesgo de desarrollar problemas de salud como enfermedades cardíacas, diabetes tipo 2, hipertensión y ciertos tipos de cáncer. Es aconsejable adoptar hábitos saludables y considerar una consulta con un nutricionista o profesional de la salud.';
+      } else {
+        interpretacion = 'Obesidad';
+        mensajeAdicional = 'La obesidad está asociada a un mayor riesgo de padecer varias enfermedades crónicas graves, como enfermedades cardiovasculares, diabetes tipo 2, apnea del sueño, y problemas articulares. Es altamente recomendable buscar orientación profesional para un plan de pérdida de peso seguro y efectivo.';
+      }
 
-          // Reemplazar el contenido del formulario con los resultados
-          var resultadosHTML = `
-            <h3>Resultados de calculadora IMC</h3>
-            <p>Estatura: ${alturaCm} cm</p>
-            <p>Peso: ${peso} kg</p>
-            <p>IMC: <strong>${imc}</strong></p>
-            <p>Su IMC es ${imc}, lo que indica que su peso está en la categoría de ${interpretacion} para adultos de su estatura.</p>
-          `;
+      // Reemplazar el contenido del formulario con los resultados
+      var resultadosHTML = `
+        <h3>Resultados de la calculadora IMC</h3>
+        <p>Estatura: ${alturaCm} cm</p>
+        <p>Peso: ${peso} kg</p>
+        <p>IMC: <strong>${imc}</strong></p>
+        <p>Su IMC es ${imc}, lo que indica que su peso está en la categoría de <strong>${interpretacion}</strong> para adultos de su estatura.</p>
+        <p>${mensajeAdicional}</p>
+      `;
 
-          $('#calculatorContent').html(resultadosHTML);
-        } else {
-          alert("Por favor ingrese valores válidos para altura y peso.");
-        }
-      });
-    });
+      $('#calculatorContent').html(resultadosHTML);
+    } else {
+      alert("Por favor ingrese valores válidos para altura y peso.");
+    }
+  });
+});
+
   </script>
 </body>
 </html>

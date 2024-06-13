@@ -2,21 +2,27 @@ body {
     font-family: 'Open Sans', sans-serif; 
 }
 
- .navbar-logo {
+.navbar-logo {
     width: 40px;
     height: auto;
     margin-right: 10px;
 }
 
 header .navbar {
-    background-color: #fff9e1; 
+    background-color: #fff9e1;
+    z-index: 1; /* Z-index para el navbar superior */
+}
+
+.navbar {
+    z-index: 1; /* Asegúrate de que el navbar tenga un z-index menor que el dropdown */
+
 }
 
 header .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
- .navbar-brand {
+.navbar-brand {
     font-size: 26px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -39,15 +45,18 @@ header .navbar-nav .nav-item .nav-link:hover {
 
 header .navbar .dropdown-menu {
     background-color: #fff9e1;
+    position: relative; /* Asegura que el dropdown se superponga correctamente */
+    z-index: 40; /* Asegúrate de que el menú desplegable tenga una prioridad mayor */
 }
 
 header .dropdown-menu .dropdown-item:hover {
     background-color: #41d46d;
     color: white;
 }
+
 .list-inline .list-link {
     color: rgb(3, 3, 3); /* Cambia el color del texto de los enlaces */
-    font-family: 'Poppings', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin-right: 20px; 
     transition: background-color 0.3s, border-radius 0.8s; 
@@ -68,8 +77,8 @@ footer {
     width: 100%; /* Ocupa todo el ancho */
     background-color: #fff9e1;
     padding: 10px 0;
+    z-index: 0; /* Asegúrate de que el footer tenga un z-index bajo */
 }
-
 
 .site-logo {
     font-family: 'Cabin Sketch', cursive;
@@ -165,6 +174,18 @@ footer {
     margin: 0.5em 0.5em;
     padding: 0.5em 0.5em 0.5em;
 }
+.button.is-primary {
+    background-color: #41d46d;
+    border-color: transparent;
+    color: #fff;
+}
+.hero.is-primary.is-bold {
+    background-image: linear-gradient(141deg, #41d46d 0%, #41d46d 71%, #41d46d 100%);
+}
+.button.is-primary.is-inverted {
+    background-color: #fff;
+    color: #41d46d;
+}
 
 @media screen and (min-width: 769px) {
     .hero.is-large .hero-body {
@@ -187,5 +208,22 @@ footer {
 
     .modal-card {
         width: 375px;
+    }
+}
+@media screen and (min-width: 769px), print {
+    .hero.is-medium .hero-body {
+        padding-bottom: 3rem; /* Ajusta este valor según sea necesario */
+        padding-top: 3rem;    /* Ajusta este valor según sea necesario */
+    }
+}
+@media screen and (min-width: 769px), print {
+    .hero.is-medium .hero-body {
+        padding-bottom: 3rem; /* Ajusta este valor según sea necesario */
+        padding-top: 3rem;    /* Ajusta este valor según sea necesario */
+    }
+
+    .hero.is-large .hero-body {
+        padding-bottom: 3rem; /* Ajusta este valor según sea necesario */
+        padding-top: 3rem;    /* Ajusta este valor según sea necesario */
     }
 }

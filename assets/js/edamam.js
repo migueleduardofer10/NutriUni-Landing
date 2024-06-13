@@ -1,6 +1,6 @@
 var recipeArr = [];
 var saveToPlanner = [];
-var randomRecipe = ["Estofado de Carne en Olla de Cocción Lenta", "Sartén de Pollo Asiático", "Cerdo Desmenuzado Fácil", "Camarones al Ajillo", "Chili de Una Olla", "Enchiladas", "Pollo Alfredo", "Camarones Empanizados con Coco", "Macarrones con Queso", "Pollo Teriyaki con Brócoli", "Albóndigas de Pavo"];
+var randomRecipe = ["Slow Cooker Pot Roast", "Asian Chicken Skillet", "Easy Pulled Pork", "Shrimp Scampi", "One-Pot Chili", "Enchiladas", "Chicken Alfredo", "Coconut Breaded Shrimp", "Macaroni and Cheese", "Broccoli Chicken Teriyaki", "Turkey Meatballs"];
 var searchTerm = "";
 $(document).ready(function () {
     var searchFunction = function (searchTerm) {
@@ -132,8 +132,9 @@ $(document).ready(function () {
     });
     $("#search-random-recipe").click(function () {
         var randomNum = Math.floor(Math.random() * (randomRecipe.length));
+        console.log("RandomNum", randomNum)
         searchTerm = randomRecipe[randomNum];
-        console.log(searchTerm)
+        console.log("Search Term", searchTerm)
         searchFunction(searchTerm);
     });
 
