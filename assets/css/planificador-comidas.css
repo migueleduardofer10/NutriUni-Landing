@@ -1,123 +1,191 @@
-#recomendaciones-section .carousel-inner .carousel-item > .d-flex {
-    justify-content: center;
-    min-width: 100%; 
+body {
+    font-family: 'Open Sans', sans-serif; 
 }
 
-#recomendaciones-section .card {
-    flex: 0 0 auto;
-    width: 18rem; 
+ .navbar-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
 }
 
-#recomendaciones-section .carousel-control-prev, 
-#recomendaciones-section .carousel-control-next {
-    width: 5%; 
+header .navbar {
+    background-color: #fff9e1; 
 }
 
-#carouselExampleControls .card-body {
-    background-color: #fff; /* Fondo blanco para mayor legibilidad */
-    padding: 20px; /* Añade un padding para espaciar el contenido */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
-    margin-bottom: 10px; /* Espacio debajo de cada tarjeta */
-}
-
-#carouselExampleControls .card-title {
-    color: #333; /* Color oscuro para el título para mejor contraste */
-    font-weight: bold; /* Hacer el título más destacado */
-    margin-bottom: 10px; /* Espacio debajo del título */
-}
-
-#carouselExampleControls .card-text {
-    color: #666; 
-    line-height: 1.5; 
-    margin-bottom: 15px; 
-}
-
-#carouselExampleControls .btn-primary, #carouselExampleControls .btn-info {
-    width: 100%; 
-    margin-top: 5px; 
-}
-
-#carouselExampleControls .btn-primary {
-    background-color: transparent; /* Elimina el color de fondo */
-    color: #007bff; /* Mantiene el color azul por defecto para enlaces */
-    border: none; /* Elimina el borde */
-    padding: 0; /* Elimina el padding */
-    box-shadow: none; /* Elimina cualquier sombra */
-    text-decoration: underline; /* Añade subrayado para parecer un enlace */
-    display: inline; /* Asegura que el enlace no ocupe todo el ancho */
-    margin: 0; /* Elimina cualquier margen */
-    font-weight: normal; /* Estilo de fuente normal, no negrita */
-}
-
-
-#carouselExampleControls .btn-info {
-    color: #fff; 
-    background-color: #41d46d;
-    border-color: #41d46d; /
-}
-#recomendaciones-section h2 {
-    color: #333; 
-}
-.navbar-toggler-icon {
+header .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-#meal-plan-section .table {
-    width: 100%;
-    border-collapse: collapse;
+ .navbar-brand {
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #41d46d;
 }
 
-#meal-plan-section th, #meal-plan-section td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-#meal-plan-section th {
-    background-color: #f4f4f4;
-}
-
-#meal-plan-section .day-actions a {
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-#meal-plan-section .has-text-success {
-    color: #28a745; 
-}
-
-#meal-plan-section .has-text-warning {
-    color: #ffc107; 
-}
-
-#meal-plan-section .has-text-danger {
-    color: #dc3545; 
-}
-
-#meal-plan-section .is-hidden {
-    display: none;
-}
-
-#meal-plan-section .recipe-link a {
-    color: #007bff; 
-    text-decoration: none;
-}
-
-#meal-plan-section .btn {
+header .navbar-nav .nav-link {
+    color: rgb(3, 3, 3);
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px; 
+    margin-right: 20px;
+    transition: background-color 0.3s, border-radius 0.8s; 
 }
 
-#meal-plan-section h3 {
+header .navbar-nav .nav-item .nav-link:hover {
+    background-color: #41d46d;
+    color: #ffffff;
+    transition: border-radius 0.5s ease-in;
+}
+
+header .navbar .dropdown-menu {
+    background-color: #fff9e1;
+}
+
+header .dropdown-menu .dropdown-item:hover {
+    background-color: #41d46d;
+    color: white;
+}
+.list-inline .list-link {
+    color: rgb(3, 3, 3); /* Cambia el color del texto de los enlaces */
+    font-family: 'Poppings', sans-serif;
+    font-size: 18px;
     margin-right: 20px; 
+    transition: background-color 0.3s, border-radius 0.8s; 
+    text-decoration: none;
+}
+
+.list-inline .list-link:hover {
+    color: #41d46d; /* Cambia el color del texto de los enlaces */
+}
+
+.list-inline {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: #fff9e1;
+    padding: 10px 0;
 }
 
 
-#meal-plan-section .btn:hover {
-    background-color: #24996b;
+.site-logo {
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 700;
+}
+
+#site-header {
+    background-image: url("../images/food-on-marble-countertop.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#display-recipe,
+#display-saved-recipe,
+#saved-recipe {
+    overflow: scroll;
+}
+
+.actions {
+    cursor: pointer;
+}
+
+.recipe-link,
+.recipeLink {
+    color: #3273dc !important;
+}
+
+.recipe-link:hover,
+.hero.is-light a:hover {
+    color: #363636;
+}
+
+#map {
+    height: 400px;
+}
+
+.ingredients-link {
+    color: #3273dc;
+}
+
+.ingredients-link:hover {
+    color: #363636;
+}
+
+#find-recipe {
+    width: 100%;
+}
+
+#mon-recipe,
+#tue-recipe,
+#wed-recipe,
+#thu-recipe,
+#fri-recipe,
+#sat-recipe,
+#sun-recipe {
+    width: 250px;
+}
+
+#mon-comment,
+#tue-comment,
+#wed-comment,
+#thu-comment,
+#fri-comment,
+#sat-comment,
+#sun-comment {
+    width: 250px;
+}
+
+.modal-card-title,
+.show-ingredients-title {
+    word-wrap: break-word;
+}
+
+.ingredients-list-title {
+    font-weight: 700;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.card-image,
+.image.is-square img,
+.recipe-image {
+    width: 197.766px;
+    height: 197.766px;
+}
+
+.saved-recipes-card {
+    margin: 0.5em 0.5em;
+    padding: 0.5em 0.5em 0.5em;
+}
+
+@media screen and (min-width: 769px) {
+    .hero.is-large .hero-body {
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .card-image,
+    .image.is-square img,
+    .recipe-image {
+        width: 197.766px;
+        height: 197.766px;
+    }
+
+    .modal-card-head {
+        font-size: 1.25em;
+    }
+
+    .modal-card {
+        width: 375px;
+    }
 }

@@ -1,381 +1,519 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NutriUni</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link href="assets/css/slick.css" rel="stylesheet" />
-  <link href="assets/css/slick-theme.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/home-borrador.css" />
-  <link rel="stylesheet" href="assets/css/planificador-comidas.css" />
-  <script src="https://kit.fontawesome.com/6661cb5fdb.js" crossorigin="anonymous" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's For Dinner? | Group 5 Studio</title>
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Open+Sans" rel="stylesheet">
+    <!-- Link Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <!-- Link Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Link Customized CSS -->
+    <link rel="stylesheet" href="assets/css/planificador-comidas.css" type="text/css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/planificador/img-cooking-icon.png">
 </head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- Logo -->
-        <a class="navbar-brand" href="home-borrador.html">
-          <img src="assets/images/home/logo.webp" alt=" " class="navbar-logo" />
-          NutriUni</a>
-
-        <!-- Botón para dispositivos móviles -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" op aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Enlaces de la barra de navegación -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home-borrador.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-
-              <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Nutrición
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="ultimas-publicaciones.html">Artículos Educativos</a></li>
-                <li><a class="dropdown-item" href="informacion-nutricional.html">Información Nutricional</a></li>
-                <li><a class="dropdown-item" href="calculadoraIMC.html">Calculadora de IMC</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="planificador-comidas.html">Planificador de comidas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="home-borrador.html"></a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="container mt-5">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col">
-            <h2 class="text-start my-2">¿Qué hay para comer?</h2>
-          </div>
-          <div class="col-md-4">
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Receta en 15 minutos
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#"
-                    onclick="changeButtonText('Recetas de bandeja para horno')">Recetas de bandeja para horno</a></li>
-                <li><a class="dropdown-item" href="#" onclick="changeButtonText('Recetas en 15 minutos')">Recetas en 15
-                    minutos</a></li>
-                <li><a class="dropdown-item" href="#" onclick="changeButtonText('Receta aleatoria')">Receta
-                    aleatoria</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="home-borrador.html">
+              <img src="assets/images/home/logo.webp" alt=" " class="navbar-logo" />
+              NutriUni</a>
+    
+            <!-- Botón para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Enlaces de la barra de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home-borrador.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Nutrición
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="ultimas-publicaciones.html">Artículos Educativos</a></li>
+                    <li><a class="dropdown-item" href="informacion-nutricional.html">Información Nutricional</a></li>
+                    <li><a class="dropdown-item" href="calculadoraIMC.html">Calculadora de IMC</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="planificador-comidas.html">Planificador de comidas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="home-borrador.html"></a>
+                </li>
               </ul>
             </div>
           </div>
+        </nav>
+      </header>
+    <!-- Navbar -->
+    <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+            <a class="site-logo navbar-item" href="#">
+                ¿Qué hay para cenar?
+            </a>
+            <div class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="start-menu-ideas">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </div>
         </div>
-      </div>
-      <!-- Sección de recomendaciones con ID -->
-      <section id="recomendaciones-section" class="row">
-        <div class="col d-flex justify-content-between align-items-center">
-          <h3 class="my-5">Recomendaciones</h3>
-          <div class="col-md-4">
-            <form class="form-inline d-flex justify-content-end">
-              <input class="form-control mr-2" type="text" placeholder="Buscar..." aria-label="Buscar"
-                style="width: 200px; margin-right: 10px;">
-              <button class="btn btn-primary" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-        <div class="col">
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="d-flex">
-                  <!-- Tarjeta 1 -->
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="assets/images/publicaciones/desayunos_frutales.webp" class="card-img-top" alt="Comida 1">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Teriyaki</h5>
-                      <p class="card-text">
-                        244 calorías por porción.<br>
-                        Porciones: 8.<br>
-                        8 Ingredientes.
-                    </p>                      <a href="#" class="btn btn-primary">Obtener receta</a>
-                      <button class="btn btn-info">Añadir al planificador</button>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a id="start-menu-ideas" class="navbar-link" href="#">
+                        Ideas para comidas iniciales
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a id="search-sheet-pan" data-id="Sheet Pan Recipes" class="navbar-item quickPicks" href="#">
+                            Recetas en bandeja
+                        </a>
+                        <a id="search-15-min" data-id="15 Minute" class="navbar-item quickPicks" href="#">
+                            Cena de 15 minutos
+                        </a>
+                        <hr class="navbar-divider">
+                        <a id="search-random-recipe" class="navbar-item is-active" href="#">
+                            ¡Receta aleatoria!
+                        </a>
                     </div>
-                  </div>
-                  <!-- Tarjeta 2 -->
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="assets/images/publicaciones/pastas.webp" class="card-img-top" alt="Comida 2">
-                    <div class="card-body">
-                      <h5 class="card-title">Chicken Teriyaki</h5>
-                      <p class="card-text">
-                        244 calorías por porción.<br>
-                        Porciones: 8.<br>
-                        8 Ingredientes.
-                    </p>                      <a href="#" class="btn btn-primary">Obtener receta</a>
-                    <button class="btn btn-info">Añadir al planificador</button>
-                  </div>
-                  </div>
-                  <!-- Tarjeta 3 -->
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="assets/images/publicaciones/atun.webp" class="card-img-top" alt="Comida 3">
-                    <div class="card-body">
-                      <h5 class="card-title">Pineapple Chicken Teriyaki</h5>
-                      <p class="card-text">
-                        244 calorías por porción.<br>
-                        Porciones: 8.<br>
-                        8 Ingredientes.
-                    </p>                      <a href="#" class="btn btn-primary">Obtener receta</a>
-                    <button class="btn btn-info">Añadir al planificador</button>
-                  </div>
-                  </div>
                 </div>
-              </div>
-              <!-- Ítem 2 -->
-              <div class="carousel-item">
-                <div class="d-flex">
-                  <!-- Tarjeta 4 -->
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="https://media.discordapp.net/attachments/746842592649674784/1238174307381678201/Beef_Stir_Fry.jpg?ex=663e532f&is=663d01af&hm=6b4225dc87bad34b3d05aac05b2ac1a5a79a052802ec6a56e16160a94a67aa58&=&format=webp&width=904&height=678" class="card-img-top" alt="Beef Stir Fry">
-                    <div class="card-body">
-                      <h5 class="card-title">Beef Stir Fry</h5>
-                      <p class="card-text">
-                        244 calorías por porción.<br>
-                        Porciones: 8.<br>
-                        8 Ingredientes.
-                    </p>                      <a href="#" class="btn btn-primary">Get the Recipe</a>
-                    <button class="btn btn-info">Añadir al planificador</button>
-                  </div>
-                  </div>
-                  <!-- Tarjeta 5 -->
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="https://media.discordapp.net/attachments/746842592649674784/1238174666212900966/Veggie_Pasta.jpg?ex=663e5384&is=663d0204&hm=8af3d6316b77c207c754cf6f3066cedd93f42f8eb962c3c74acbd94d078036e0&=&format=webp&width=904&height=678" class="card-img-top" alt="Veggie Pasta">
-                    <div class="card-body">
-                      <h5 class="card-title">Veggie Pasta</h5>
-                      <p class="card-text">
-                        244 calorías por porción.<br>
-                        Porciones: 8.<br>
-                        8 Ingredientes.
-                    </p>                      <a href="#" class="btn btn-primary">Get the Recipe</a>
-                    <button class="btn btn-info">Añadir al planificador</button>
-                  </div>
-                  </div>
-                  <!-- Tarjeta 6 -->
-                  <div class="card mx-2" style="width: 18rem;">
-                    <img src="https://media.discordapp.net/attachments/746842592649674784/1238174307771875370/Salmon_Salad.webp?ex=663e532f&is=663d01af&hm=afef8dbdddaf33fc7c20a82100d3fe5bf6457533b4a8579bd485d76798f619fa&=&format=webp&width=1017&height=678" class="card-img-top" alt="Salmon Salad">
-                    <div class="card-body">
-                      <h5 class="card-title">Salmon Salad</h5>
-                      <p class="card-text">
-                        244 calorías por porción.<br>
-                        Porciones: 8.<br>
-                        8 Ingredientes.
-                    </p>                      <a href="#" class="btn btn-primary">Get the Recipe</a>
-                    <button class="btn btn-info">Añadir al planificador</button>
-                  </div>
-                  </div>
-                </div>
-              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="field is-grouped">
+                        <p class="control">
+                            <a class="show-user-modal bd-tw-button button">
+                                <span class="icon">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <span id="username">
+                                    Iniciar sesión
+                                </span>
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-      <section id="meal-plan-section">
-        <div class="col">
-          <h3 class="my-5 d-inline-block mr-3">Plan de comidas</h3>
-          <a href="#" class="btn btn-primary mr-3"><i class="fas fa-download mr-2"></i> Descarga rápida</a>
-          <table id="weekly-plan" class="table is-striped is-hoverable js-table-data">
-            <thead>
-              <tr>
-                <th>
-                </th>
-                <th><i class="fas fa-utensils"></i> Recetas</th>
-                <th><i class="far fa-comments"></i> Comentarios</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
+    </nav>
 
-            <tbody>
-              <tr class="mealplan-cell" id="row-monday">
-                <th>Lunes</th>
-                <td data-label="Recipe" id="mon-recipe" class="recipe-link" contenteditable="false"><a href="#"
-                    title="recipe-name">
-                  </a></td>
-                <td data-label="Comment" id="mon-comment" contenteditable="false">
-                  <!-- comment -->
-                </td>
-                <td data-label="Actions" class="day-actions">
-                  <!-- Actions -->
-                  <!-- Add -->
-                  <a id="mon-add" data-action="add" class="has-text-success mon-actions is-hidden"
-                    title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
-                  <!-- Change -->
-                  <a id="mon-change" data-action="change" class="has-text-warning mon-actions" href="#"
-                    title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
-                  <!-- Remove -->
-                  <a id="mon-remove" data-action="remove" class="has-text-danger mon-actions" href="#"
-                    title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
-                        class="fas fa-trash" alt="Remove"></i></span></a>
-                </td>
-              </tr>
+    <!-- Username Modal -->
+    <div id="ask-username" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p id="show-user-title" class="modal-card-title">Ingrese su nombre</p>
+                <button class="user-modal-close  delete" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label for="enter-username" class="label">Nombre</label>
+                    <div class="control has-icons-left has-icons-right">
+                        <input id="enter-username" class="input is-primary" type="text" placeholder="Enter your name">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-user"></i>
+                        </span>
+                    </div>
 
-              <tr class="mealplan-cell" id="row-tuesday">
-                <th>Martes</th>
-                <td id="tue-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
-                  </a></td>
-                <td id="tue-comment" contenteditable="false">
-                </td>
-                <td class="day-actions">
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button id="submit-user" class="button is-primary">Enviar</button>
+                    </div>
+                    <div class="control">
+                        <button id="cancel-user" class="button is-text">Cancelar</button>
+                    </div>
+                </div>
 
-                  <a id="tue-add" data-action="add" class="has-text-success tue-actions is-hidden"
-                    title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
-                  <a id="tue-change" data-action="change" class="has-text-warning tue-actions" href="#"
-                    title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
-                  <a id="tue-remove" data-action="remove" class="has-text-danger tue-actions" href="#"
-                    title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
-                        class="fas fa-trash" alt="Remove"></i></span></a>
-                </td>
-              </tr>
-
-              <tr class="mealplan-cell" id="row-wednesday">
-                <th>Miercoles</th>
-                <td id="wed-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
-                  </a></td>
-                <td id="wed-comment" contenteditable="false">
-                </td>
-                <td class="day-actions">
-                  <a id="wed-add" data-action="add" class="has-text-success wed-actions is-hidden"
-                    title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
-                  <a id="wed-change" data-action="change" class="has-text-warning wed-actions" href="#"
-                    title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
-                  <a id="wed-remove" data-action="remove" class="has-text-danger wed-actions" href="#"
-                    title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
-                        class="fas fa-trash" alt="Remove"></i></span></a>
-                </td>
-              </tr>
-
-              <tr class="mealplan-cell" id="row-thursday">
-                <th>Jueves</th>
-                <td id="thu-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
-                    <!-- recipe name--></a></td>
-                <td id="thu-comment" contenteditable="false">
-                  <!-- comment -->
-                </td>
-                <td class="day-actions">
-                  <!-- Actions -->
-                  <!-- Add -->
-                  <a id="thu-add" data-action="add" class="has-text-success thu-actions is-hidden"
-                    title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
-                  <!-- Change -->
-                  <a id="thu-change" data-action="change" class="has-text-warning thu-actions" href="#"
-                    title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
-                  <!-- Remove -->
-                  <a id="thu-remove" data-action="remove" class="has-text-danger thu-actions" href="#"
-                    title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
-                        class="fas fa-trash" alt="Remove"></i></span></a>
-                </td>
-              </tr>
-
-              <tr class="mealplan-cell" id="row-friday">
-                <th>Viernes</th>
-                <td id="fri-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
-                    <!-- recipe name--></a></td>
-                <td id="fri-comment" contenteditable="false">
-                  <!-- comment -->
-                </td>
-                <td class="day-actions">
-                  <!-- Actions -->
-                  <!-- Add -->
-                  <a id="fri-add" data-action="add" class="has-text-success fri-actions is-hidden"
-                    title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
-                  <!-- Change -->
-                  <a id="fri-change" data-action="change" class="has-text-warning fri-actions" href="#"
-                    title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
-                  <!-- Remove -->
-                  <a id="fri-remove" data-action="remove" class="has-text-danger fri-actions" href="#"
-                    title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
-                        class="fas fa-trash" alt="Remove"></i></span></a>
-                </td>
-              </tr>
-
-              <tr class="mealplan-cell" id="row-saturday">
-                <th>Sabado</th>
-                <td id="sat-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
-                    <!-- recipe name--></a></td>
-                <td id="sat-comment" contenteditable="false">
-                  <!-- comment -->
-                </td>
-                <td class="day-actions">
-                  <!-- Actions -->
-                  <!-- Add -->
-                  <a id="sat-add" data-action="add" class="has-text-success sat-actions is-hidden"
-                    title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
-                  <!-- Change -->
-                  <a id="sat-change" data-action="change" class="has-text-warning sat-actions" href="#"
-                    title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
-                  <!-- Remove -->
-                  <a id="sat-remove" data-action="remove" class="has-text-danger sat-actions" href="#"
-                    title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
-                        class="fas fa-trash" alt="Remove"></i></span></a>
-                </td>
-              </tr>
-
-              <tr class="mealplan-cell" id="row-sunday">
-                <th>Domingo</th>
-                <td id="sun-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
-                    <!-- recipe name--></a></td>
-
-                <td id="sun-comment" contenteditable="false">
-                  <!-- comment -->
-                </td>
-                <td class="day-actions">
-                  <!-- Actions -->
-                  <!-- Add -->
-                  <a id="sun-add" data-action="add" class="has-text-success sun-actions is-hidden"
-                    title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
-                  <!-- Change -->
-                  <a id="sun-change" data-action="change" class="has-text-warning sun-actions" href="#"
-                    title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
-                  <!-- Remove -->
-                  <a id="sun-remove" data-action="remove" class="has-text-danger sun-actions" href="#"
-                    title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
-                        class="fas fa-trash" alt="Remove"></i></span></a>
-                </td>
-              </tr>
-
-            </tbody>
-          </table>
         </div>
-      </section>
-  </main>
-  <!--FOOTER-->
-  <footer class="text-center text-lg-start">
+        </footer>
+    </div>
+    </div>
+    <!-- Hero + search bar -->
+    <section id="start-search" class="hero is-medium is-white">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="site-logo title is-1">
+                    ¿Que hay para cenar?
+                </h1>
+                <p class="subtitle">
+                    ¡Encontrarás comidas geniales que disfrutarán <strong>toda la familia</strong>!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="site-header" class="hero is-large">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-mobile is-centered">
+                    <div class="column is-three-quarters-mobile is-half-desktop">
+                        <div class="field is-fullwidth has-addons">
+                            <div class="control">
+                                <input id="find-recipe" class="input" type="text" placeholder="Encontrar una receta">
+                            </div>
+                            <div id="search-recipe" class="control">
+                                <a class="button is-primary">
+                                    Buscar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create content area for recipes using tile + card + box -->
+
+    <section>
+        <div class="container-fluid">
+            <div id="display-recipe" class="tile is-ancestor is-mobile">
+
+            </div> <!-- End tile is-ancestor -->
+        </div>
+    </section>
+
+
+    <!-- End content area -->
+
+    <!-- Username modal -->
+    <div id="alert-username" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <!-- Any other Bulma elements you want -->
+            <article class="message">
+                <div class="message-header">
+                    <p>Iniciar sesión requerido</p>
+                    <button class="username-modal-close delete" aria-label="delete"></button>
+                </div>
+                <div class="message-body">
+                    Para usar la función 'recetas guardadas', por favor haga clic en el botón 'iniciar sesión' en la esquina superior derecha e ingrese su nombre. ¡Gracias!
+                </div>
+            </article>
+        </div>
+        <button class="username-modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="show-recipe" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p id="show-recipe-title" class="modal-card-title">Ensalada de Kale</p>
+                <button class="recipe-modal-close delete" aria-label="close"></button>
+            </header>
+            <section id="show-recipe-body" class="modal-card-body">
+                <!-- Content ... -->
+            </section>
+            <footer class="modal-card-foot">
+                <button class="show-recipe-footer button is-primary">Agregar al planificador semanal</button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Ingredients Modal -->
+    <div id="show-ingredients" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p id="show-ingredients-title" class="modal-card-title">Ensalada de Kale</p>
+                <button class="ingredients-modal-close delete" aria-label="close"></button>
+            </header>
+            <section id="show-ingredients-body" class="modal-card-body">
+                <!-- Content ... -->
+            </section>
+            <footer id="show-ingredients-footer" class="modal-card-foot">
+                <button class="button has-background-primary">Agregar al planificador semanal</button>
+                <button class="button is-success">Agregar al planificador semanal</button>
+                <button class="modal-close button" aria-label="close"></button>
+            </footer>
+        </div>
+    </div>
+
+    <hr>
+
+
+    <!-- Responsive Table to display weekly meal plan -->
+    <section class="hero is-primary is-bold">
+        <div class="hero-body" id="weekly-planner-body">
+            <div class="container">
+
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent is-12">
+                        <div class="tile is-child">
+                            <h2 class="site-logo title is-1 has-text-white">
+                                ¿Qué hay para cenar?
+                            </h2>
+                        </div>
+                        <div class="tile is-child">
+
+                            <p class="control">
+                                <a id="export" class="button is-primary is-inverted" href="#">
+                                    <span class="icon">
+                                        <i class="fas fa-download"></i>
+                                    </span>
+                                    <span> Descarga rápida</span>
+                                </a>
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <article class="tile is-child">
+                        <!-- Testing new layout for weekly meal plan -->
+                        <table id="weekly-plan" class="table is-striped is-hoverable js-table-data">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <!-- Day of the Week -->
+                                    </th>
+                                    <th><i class="fas fa-utensils"></i> Recetas</th>
+                                    <th><i class="far fa-comments"></i> Comentarios</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!--------------------------- Monday --------------------------->
+                                <tr class="mealplan-cell" id="row-monday">
+                                    <th>Lunes</th>
+                                    <td data-label="Recipe" id="mon-recipe" class="recipe-link" contenteditable="false"><a
+                                            href="#" title="recipe-name">
+                                            <!-- recipe name--></a></td>
+                                    <td data-label="Comment" id="mon-comment" contenteditable="false">
+                                        <!-- comment -->
+                                    </td>
+                                    <td data-label="Actions" class="day-actions">
+                                        <!-- Actions -->
+                                        <!-- Add -->
+                                        <a id="mon-add" data-action="add" class="has-text-success mon-actions is-hidden"
+                                            title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
+                                        <!-- Change -->
+                                        <a id="mon-change" data-action="change" class="has-text-warning mon-actions"
+                                            href="#" title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
+                                        <!-- Remove -->
+                                        <a id="mon-remove" data-action="remove" class="has-text-danger mon-actions"
+                                            href="#" title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
+                                                    class="fas fa-trash" alt="Remove"></i></span></a>
+                                    </td>
+                                </tr>
+                                <!--------------------------- End Monday --------------------------->
+                                <!--------------------------- Tuesday --------------------------->
+                                <tr class="mealplan-cell" id="row-tuesday">
+                                    <th>Martes</th>
+                                    <td id="tue-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
+                                            <!-- recipe name--></a></td>
+                                    <td id="tue-comment" contenteditable="false">
+                                        <!-- comment -->
+                                    </td>
+                                    <td class="day-actions">
+                                        <!-- Actions -->
+                                        <!-- Add -->
+                                        <a id="tue-add" data-action="add" class="has-text-success tue-actions is-hidden"
+                                            title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
+                                        <!-- Change -->
+                                        <a id="tue-change" data-action="change" class="has-text-warning tue-actions"
+                                            href="#" title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
+                                        <!-- Remove -->
+                                        <a id="tue-remove" data-action="remove" class="has-text-danger tue-actions"
+                                            href="#" title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
+                                                    class="fas fa-trash" alt="Remove"></i></span></a>
+                                    </td>
+                                </tr>
+                                <!--------------------------- End Tuesday --------------------------->
+                                <!--------------------------- Wednesday --------------------------->
+                                <tr class="mealplan-cell" id="row-wednesday">
+                                    <th>Miercoles</th>
+                                    <td id="wed-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
+                                            <!-- recipe name--></a></td>
+                                    <td id="wed-comment" contenteditable="false">
+                                        <!-- comment -->
+                                    </td>
+                                    <td class="day-actions">
+                                        <!-- Actions -->
+                                        <!-- Add -->
+                                        <a id="wed-add" data-action="add" class="has-text-success wed-actions is-hidden"
+                                            title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
+                                        <!-- Change -->
+                                        <a id="wed-change" data-action="change" class="has-text-warning wed-actions"
+                                            href="#" title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
+                                        <!-- Remove -->
+                                        <a id="wed-remove" data-action="remove" class="has-text-danger wed-actions"
+                                            href="#" title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
+                                                    class="fas fa-trash" alt="Remove"></i></span></a>
+                                    </td>
+                                </tr>
+                                <!--------------------------- End Wednesday --------------------------->
+                                <!--------------------------- Thursday --------------------------->
+                                <tr class="mealplan-cell" id="row-thursday">
+                                    <th>Jueves</th>
+                                    <td id="thu-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
+                                            <!-- recipe name--></a></td>
+                                    <td id="thu-comment" contenteditable="false">
+                                        <!-- comment -->
+                                    </td>
+                                    <td class="day-actions">
+                                        <!-- Actions -->
+                                        <!-- Add -->
+                                        <a id="thu-add" data-action="add" class="has-text-success thu-actions is-hidden"
+                                            title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
+                                        <!-- Change -->
+                                        <a id="thu-change" data-action="change" class="has-text-warning thu-actions"
+                                            href="#" title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
+                                        <!-- Remove -->
+                                        <a id="thu-remove" data-action="remove" class="has-text-danger thu-actions"
+                                            href="#" title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
+                                                    class="fas fa-trash" alt="Remove"></i></span></a>
+                                    </td>
+                                </tr>
+                                <!--------------------------- End Thursday --------------------------->
+                                <!--------------------------- Friday --------------------------->
+                                <tr class="mealplan-cell" id="row-friday">
+                                    <th>Viernes</th>
+                                    <td id="fri-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
+                                            <!-- recipe name--></a></td>
+                                    <td id="fri-comment" contenteditable="false">
+                                        <!-- comment -->
+                                    </td>
+                                    <td class="day-actions">
+                                        <!-- Actions -->
+                                        <!-- Add -->
+                                        <a id="fri-add" data-action="add" class="has-text-success fri-actions is-hidden"
+                                            title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
+                                        <!-- Change -->
+                                        <a id="fri-change" data-action="change" class="has-text-warning fri-actions"
+                                            href="#" title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
+                                        <!-- Remove -->
+                                        <a id="fri-remove" data-action="remove" class="has-text-danger fri-actions"
+                                            href="#" title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
+                                                    class="fas fa-trash" alt="Remove"></i></span></a>
+                                    </td>
+                                </tr>
+                                <!--------------------------- End Friday --------------------------->
+                                <!--------------------------- Saturday --------------------------->
+                                <tr class="mealplan-cell" id="row-saturday">
+                                    <th>Sabado</th>
+                                    <td id="sat-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
+                                            <!-- recipe name--></a></td>
+                                    <td id="sat-comment" contenteditable="false">
+                                        <!-- comment -->
+                                    </td>
+                                    <td class="day-actions">
+                                        <!-- Actions -->
+                                        <!-- Add -->
+                                        <a id="sat-add" data-action="add" class="has-text-success sat-actions is-hidden"
+                                            title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
+                                        <!-- Change -->
+                                        <a id="sat-change" data-action="change" class="has-text-warning sat-actions"
+                                            href="#" title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
+                                        <!-- Remove -->
+                                        <a id="sat-remove" data-action="remove" class="has-text-danger sat-actions"
+                                            href="#" title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
+                                                    class="fas fa-trash" alt="Remove"></i></span></a>
+                                    </td>
+                                </tr>
+                                <!--------------------------- End Saturday --------------------------->
+                                <!--------------------------- Sunday --------------------------->
+                                <tr class="mealplan-cell" id="row-sunday">
+                                    <th>Domingo</th>
+                                    <td id="sun-recipe" class="recipe-link" contenteditable="false"><a href="#" title="recipe-name">
+                                            <!-- recipe name--></a></td>
+
+                                    <td id="sun-comment" contenteditable="false">
+                                        <!-- comment -->
+                                    </td>
+                                    <td class="day-actions">
+                                        <!-- Actions -->
+                                        <!-- Add -->
+                                        <a id="sun-add" data-action="add" class="has-text-success sun-actions is-hidden"
+                                            title="Add the details of this meal"><i class="fas fa-plus-circle" alt="Add"></i></a>
+                                        <!-- Change -->
+                                        <a id="sun-change" data-action="change" class="has-text-warning sun-actions"
+                                            href="#" title="Change the details of this meal"><i class="fas fa-pen" alt="Change"></i></a>
+                                        <!-- Remove -->
+                                        <a id="sun-remove" data-action="remove" class="has-text-danger sun-actions"
+                                            href="#" title="Remove the details of this meal"><span class="remove has-text-danger actions"><i
+                                                    class="fas fa-trash" alt="Remove"></i></span></a>
+                                    </td>
+                                </tr>
+                                <!--------------------------- End Sunday --------------------------->
+                            </tbody>
+                        </table>
+
+                        <!-- End Testing new layout for weekly meal plan -->
+
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- Saved Recipes -->
+    <!-- Create content area for saved recipes using tile + card + box -->
+
+    <section id="display-saved-recipe" class="hero is-bold is-light is-bold">
+        <div class="hero-body">
+            <div class="container-fluid">
+                <h1 class="title">
+                    Recetas Guardas
+                </h1>
+                <div id="saved-recipe">
+
+                </div> <!-- End tile is-ancestor -->
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    
+
+<!--FOOTER-->
+<footer class="text-center text-lg-start">
     <div class="container p-3">
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-auto mb-0">
@@ -389,8 +527,7 @@
             <li class="list-inline-item"><a href="home-borrador.html" class="list-link">Inicio</a></li>
             <li class="list-inline-item"><a href="sobre-nosotros.html" class="list-link">Sobre Nosotros</a></li>
             <li class="list-inline-item"><a href="informacion-nutricional.html" class="list-link">Nutrición</a></li>
-            <li class="list-inline-item"><a href="planificador-comidas.html" class="list-link">Planificador de
-                comidas</a></li>
+            <li class="list-inline-item"><a href="planificador-comidas.html" class="list-link">Planificador de comidas</a></li>
             <li class="list-inline-item"><a href="faq.html" class="list-link">FAQ</a></li>
           </ul>
         </div>
@@ -401,21 +538,34 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
+    <!-- Link jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery-plugin-collection.js"></script>
-  <script src="assets/js/nosotros.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script>
-    function changeButtonText(text) {
-      document.getElementById("dropdownMenuButton").textContent = text;
-    }
-  </script>
+    <!-- Link Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+
+    <!-- Link JavaScript -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/user.js"></script>
+
+    <script src="assets/js/table.js"></script>
+    <script src="assets/js/edamam.js"></script>
+    <script src="assets/js/database.js"></script>
+    <script src="assets/js/zomato.js"></script>
+    <script src="assets/js/html2canvas.min.js"></script>
+    <script src="assets/js/html2img.js"></script>
+
+
+    <!-- Link Carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@3.0.0/dist/js/bulma-carousel.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
